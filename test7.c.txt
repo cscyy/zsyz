@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<string.h>
+
+int  ZSY(int  x, int  y)
+{
+	if (x > y)
+		return;
+	else
+		return y;
+}
+int main()
+{
+	int zsy1 = 6;
+	int zsy2 = 7;
+	int zsy = 0;
+	zsy =ZSY(zsy1, zsy2); 
+	printf("zsy = %d\n", zsy);
+		return 0
