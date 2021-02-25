@@ -1,18 +1,13 @@
 #include<stdio.h>
-void test()
-{
-	static int a = 1;
-	a++;
-	printf("a=%d\n", a);
 
-}
+#define MAX(X,Y) (X>Y? X:Y)
 int main()
+
 {
-	int i = 0;
-	while (i < 5)
-	{
-		test();
-			i++;
-	}
-	return 0; 
+	int a = 10;
+	int b = 20;
+	int max = 0;
+	max = MAX(a, b);
+	printf("max=%d\n", max);
+	return 0;
 }
