@@ -1,0 +1,33 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>    
+#define MAX 10  
+
+int Add(int X, int Y);
+
+
+int main()          
+{
+	int a;       
+	int b;        
+	int c;  
+
+	printf("长方形的高为:%d\n", MAX);
+
+	printf("请输入长度\n");
+	scanf("%d", &a);
+
+	printf("请输入宽度\n");
+	scanf("%d", &b);
+
+	c= Add(a,b);
+	printf("长方形的体积是:");
+	printf("%d\n",c);
+
+	return 0;       
+}
+int Add(int X,int Y)
+{
+	int c = X*Y*MAX;
+	return c;
+
+}
